@@ -1,0 +1,13 @@
+{
+    "LogInPageLocators" : {
+        "loginPageLogo" : "div.login_logo",
+        "userNameIPBox" : "input#user-name",
+        "passwordIPBox" : "input[name='password']",
+        "loginBtn":"input[type='submit']",
+        "accepted_username_header": "div#login_credentials>h4",
+        "accepted_password_header": "div[class=login_password]>h4",
+        "accepted_usernames": "//div[@id='login_credentials']",
+        "accepted_passwords": "//div[@class='login_password']",
+        "logIn_error_message": "h3[data-test=error]"
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "cypress_automation_bdd",
+  "version": "1.0.0",
+  "description": "framework with BDD support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.2.0",
+    "@cypress/browserify-preprocessor": "3.0.2",
+    "cypress": "^14.5.2"
+  },
+  "devDependencies": {
+    "cypress-xpath": "^2.0.1",
+    "mocha": "^11.7.1"
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "InventoryPageLocators" : {
+        "hamburger" : "button#react-burger-menu-btn",
+        "headerLogo" : "div.app_logo",
+        "cartIcon" : "a.shopping_cart_link",
+        "secondary_header_logo" : "span.title",
+        "filter_dropdown" : "select.product_sort_container",
+        "inventory_item_card" : "div.inventory_item",
+        "Item_Card_AddToCart" : "//div[@class= 'inventory_item']//button[text()='Add to cart']",
+        "footer_twitter_link" : "footer a[data-test='social-twitter']",
+        "footer_facebook_link" : "footer a[data-test='social-facebook']",
+        "footer_linkedin_link" : "footer a[data-test='social-linkedin']",
+        "footer_text" : "footer div"
+    }
+}

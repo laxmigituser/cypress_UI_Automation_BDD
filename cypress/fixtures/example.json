@@ -1,0 +1,18 @@
+{
+  "logInPage":{
+    "logo_text": "Swag Labs",
+    "usernames": ["standard_user","locked_out_user","problem_user", "performance_glitch_user", "error_user", "visual_user"],
+    "password": ["secret_sauce"],
+    "accepted_un_header": "Accepted usernames are:",
+    "accepted_pw_header": "Password for all users:",
+    "login_error_text": "Epic sadface: Username and password do not match any user in this service"
+  },
+
+  "inventoryPage" : {
+    "sortDropdownOptions" : ["Name (A to Z)","Name (Z to A)", "Price (low to high)", "Price (high to low)"],
+    "footer_text" : "© 2025 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy"
+  }
+  
+  
+  
+}

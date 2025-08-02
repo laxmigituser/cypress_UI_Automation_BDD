@@ -1,8 +1,18 @@
 const inventoryPageElements = require('../page_elements/InventoryPageElements.json')
 
 export class InventoryPageActions{
+    //hamburger
     getHamburger(){
         return cy.get(inventoryPageElements.InventoryPageLocators.hamburger)
+    }
+    getLeftMenuCard(){
+        return cy.get(inventoryPageElements.InventoryPageLocators.left_menu_card)
+    }
+    getLogOutButton(){
+        return cy.xpath(inventoryPageElements.InventoryPageLocators.logout_button)
+    }
+    getLeftMenuCloseButton(){
+        return cy.get(inventoryPageElements.InventoryPageLocators.left_menu_close_btn)
     }
     getHeaderLogo() {
         return cy.get(inventoryPageElements.InventoryPageLocators.headerLogo)

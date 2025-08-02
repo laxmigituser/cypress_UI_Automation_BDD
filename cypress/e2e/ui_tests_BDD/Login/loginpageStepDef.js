@@ -8,9 +8,9 @@ import { LogInPageactions } from "../../../page_objects/page_actions/LogInPageAc
 const testData = require('../../../fixtures/example.json')
 const loginPage = new LogInPageactions
 
-Given("User navigates to saucedemo website", ()=>{
-    cy.visit(Cypress.env('url'))
-})
+// Given("User navigates to saucedemo website", ()=>{
+//     cy.visit(Cypress.env('url'))
+// })
 Then("Verify page title should be {string}", (expectedTitle)=>{
     cy.title().should('eq', expectedTitle)  
 })

@@ -1,5 +1,6 @@
 Feature: Login page related tests
 
+@regression @sanity
 Scenario Outline: Login Page UI Validations
 Given User navigates to saucedemo website
 Then Verify page title should be "<pageTitle>"

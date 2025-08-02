@@ -1,0 +1,1100 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "inventory-page-related-tests;inventory-page-ui-validation",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Inventory page UI validation",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User navigates to saucedemo website",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/common_stepdefinitions/common_steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1482000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User login with credentials \"standard_user\" \"secret_sauce\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/common_stepdefinitions/common_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 849000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Verify Page Header is \"Swag Labs\" with sub header \"Products\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Inventory/inventorypageStepDef.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Verify hamburger cart icon and filter button displayed on page",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Inventory/inventorypageStepDef.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Verify \"6\" items are displayed on page",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Inventory/inventorypageStepDef.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Verify \"6\" item card has Add to cart button",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Inventory/inventorypageStepDef.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Verify footer UI displays twitter, facebook, linked in link with footer text",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Inventory/inventorypageStepDef.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "inventory-page-related-tests;inventory-page-hamburger-ui-list",
+        "keyword": "Scenario Outline",
+        "line": 30,
+        "name": "Inventory page hamburger UI list",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "User navigates to saucedemo website",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/common_stepdefinitions/common_steps.js:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "User login with credentials \"standard_user\" \"secret_sauce\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/common_stepdefinitions/common_steps.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "User click on hamburger icon",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Inventory/inventorypageStepDef.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Verify left menu gets displayed on page",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Inventory/inventorypageStepDef.js:52"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "All Items"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "About"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Logout"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Reset App State"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Verify following elements displayed in left menu",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Inventory/inventorypageStepDef.js:56"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "Verify close button is displayed in left menu",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Inventory/inventorypageStepDef.js:62"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "Verify left menu gets collapsed on clicking close button",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Inventory/inventorypageStepDef.js:65"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "inventory-page-related-tests;logout-validation",
+        "keyword": "Scenario Outline",
+        "line": 40,
+        "name": "Logout Validation",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 33,
+            "name": "User navigates to saucedemo website",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/common_stepdefinitions/common_steps.js:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "User login with credentials \"standard_user\" \"secret_sauce\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/common_stepdefinitions/common_steps.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "User click on hamburger icon",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Inventory/inventorypageStepDef.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "User click on Logout button",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Inventory/inventorypageStepDef.js:70"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "Verify User lands on page with url \"https://www.saucedemo.com/\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Inventory/inventorypageStepDef.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "inventory-page-related-tests",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Inventory page related tests",
+    "tags": [],
+    "uri": "cypress\\e2e\\ui_tests_BDD\\Inventory.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-page-related-tests;login-page-ui-validations",
+        "keyword": "Scenario Outline",
+        "line": 27,
+        "name": "Login Page UI Validations",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User navigates to saucedemo website",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/common_stepdefinitions/common_steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1038000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Verify page title should be \"Swag Labs\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Verify loginpage logo is displayed",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Verify loginpage logo text is \"Swag Labs\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Verify Username input box is displayed and enabled",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Verify Password input box is displayed and enabled",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Verify Login Button is displayed and enabled",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Verify Accepted username label is displayed with text \"Accepted usernames are:\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "standard_user"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "locked_out_user"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "problem_user"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "performance_glitch_user"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "error_user"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "visual_user"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Verify following usernames are displayed below the label",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Verify Accepted password label is displayed with text \"Password for all users:\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Verify following passwords are displayed below the label",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 3
+          },
+          {
+            "name": "@sanity",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page-related-tests;login-with-valid-credential",
+        "keyword": "Scenario Outline",
+        "line": 39,
+        "name": "Login with valid credential",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "User navigates to saucedemo website",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/common_stepdefinitions/common_steps.js:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "User enters username as \"standard_user\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:84"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "User enters password as \"secret_sauce\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:88"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "User click on Login Button",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:92"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "Verify user is directed to page with url \"https://www.saucedemo.com/inventory.html\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:95"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page-related-tests;login-with-valid-credential",
+        "keyword": "Scenario Outline",
+        "line": 40,
+        "name": "Login with valid credential",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "User navigates to saucedemo website",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/common_stepdefinitions/common_steps.js:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "User enters username as \"problem_user\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:84"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "User enters password as \"secret_sauce\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:88"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "User click on Login Button",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:92"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "Verify user is directed to page with url \"https://www.saucedemo.com/inventory.html\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:95"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page-related-tests;login-with-valid-credential",
+        "keyword": "Scenario Outline",
+        "line": 41,
+        "name": "Login with valid credential",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "User navigates to saucedemo website",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/common_stepdefinitions/common_steps.js:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "User enters username as \"performance_glitch_user\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:84"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "User enters password as \"secret_sauce\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:88"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "User click on Login Button",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:92"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "Verify user is directed to page with url \"https://www.saucedemo.com/inventory.html\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:95"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page-related-tests;login-with-valid-credential",
+        "keyword": "Scenario Outline",
+        "line": 42,
+        "name": "Login with valid credential",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "User navigates to saucedemo website",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/common_stepdefinitions/common_steps.js:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "User enters username as \"error_user\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:84"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "User enters password as \"secret_sauce\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:88"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "User click on Login Button",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:92"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "Verify user is directed to page with url \"https://www.saucedemo.com/inventory.html\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:95"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page-related-tests;login-with-valid-credential",
+        "keyword": "Scenario Outline",
+        "line": 43,
+        "name": "Login with valid credential",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "User navigates to saucedemo website",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/common_stepdefinitions/common_steps.js:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "User enters username as \"visual_user\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:84"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "User enters password as \"secret_sauce\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:88"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "User click on Login Button",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:92"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "Verify user is directed to page with url \"https://www.saucedemo.com/inventory.html\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:95"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page-related-tests;login-with-invalid-credential",
+        "keyword": "Scenario Outline",
+        "line": 56,
+        "name": "Login with Invalid credential",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 47,
+            "name": "User navigates to saucedemo website",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/common_stepdefinitions/common_steps.js:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 48,
+            "name": "User enters username as \"locked_out_user\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:84"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "User enters password as \"secret_sauce\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:88"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "User click on Login Button",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:92"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "Verify user is directed to page with url \"https://www.saucedemo.com/\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:95"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "Verify \"Epic sadface: Sorry, this user has been locked out.\" is displayed above login button",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:98"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page-related-tests;login-with-invalid-credential",
+        "keyword": "Scenario Outline",
+        "line": 57,
+        "name": "Login with Invalid credential",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 47,
+            "name": "User navigates to saucedemo website",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/common_stepdefinitions/common_steps.js:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 48,
+            "name": "User enters username as \"standard_user\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:84"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "User enters password as \"secret123\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:88"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "User click on Login Button",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:92"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "Verify user is directed to page with url \"https://www.saucedemo.com/\"",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:95"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "Verify \"Epic sadface: Username and password do not match any user in this service\" is displayed above login button",
+            "match": {
+              "location": "cypress/e2e/ui_tests_BDD/Login/loginpageStepDef.js:98"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-page-related-tests",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login page related tests",
+    "tags": [],
+    "uri": "cypress\\e2e\\ui_tests_BDD\\Login.feature"
+  }
+]

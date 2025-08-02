@@ -24,6 +24,7 @@ module.exports = defineConfig({
   e2e: {
     specPattern: 'cypress/e2e/ui_tests_BDD/*.feature',
     setupNodeEvents
+    
   },
   watchForFileChanges: false, //disable auto rerun
   video: true, // enable video capture of test execution

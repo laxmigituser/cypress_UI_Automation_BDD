@@ -1,6 +1,9 @@
 {
     "InventoryPageLocators" : {
         "hamburger" : "button#react-burger-menu-btn",
+        "left_menu_card" : "div.bm-menu-wrap",
+        "logout_button" : "//nav[@class='bm-item-list']//a[text()='Logout']",
+        "left_menu_close_btn" : "button#react-burger-cross-btn",
         "headerLogo" : "div.app_logo",
         "cartIcon" : "a.shopping_cart_link",
         "secondary_header_logo" : "span.title",

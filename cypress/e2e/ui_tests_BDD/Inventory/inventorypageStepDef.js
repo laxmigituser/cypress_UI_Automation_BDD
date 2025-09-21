@@ -2,11 +2,12 @@
 /// <reference types = "Cypress-xpath"/>
 import { Given, When ,Then} from "@badeball/cypress-cucumber-preprocessor";
 import { InventoryPageActions } from "../../../page_objects/page_actions/InventoryPageActions";
-
+import { API_Utilities } from "../../../services/API_Utilities";
 
 
 const testData = require('../../../fixtures/example.json')
 const inventoryPage = new InventoryPageActions
+const api_util = new API_Utilities()
 
 // Given("User navigates to saucedemo website", ()=>{
 //     cy.visit(Cypress.env('url'))
@@ -74,3 +75,30 @@ Then("Verify User lands on page with url {string}", (expected_url)=>{
     cy.url().should('eq', expected_url)
 })
 
+Then("Verify products list displayed on page and compare with expected list", ()=>{
+    //item list comparison from fixture file
+    const product_list = testData.inventoryPage.expected_productsList
+    inventoryPage.getInventoryItemNames().each(($el, index, $list)=>{
+        const item_text = $el.text().trim()
+        expect(product_list).to.include(item_text)
+    })
+
+    //item list comparison by consuming the API
+    api_util.getItemsList().then((response)=>{
+        expect(response.status).to.eq(200)
+        cy.log('API response body: '+ JSON.stringify(response.body))
+        // const api_item_list = response.body
+        //validations / assertions to be put here ***THIS IS DUMMY API SO NOT VALIDATING THE RESPONSE DATA***
+    })
+
+    //item list comparison by fetching data from DB
+    cy.task('queryMysqlDB', 'SELECT * FROM user_table;').then((result)=>{
+        cy.log('DB response: '+ JSON.stringify(result))
+        //***THIS IS DUMMY DB SO NOT VALIDATING THE QUERY RESULT DATA***
+    })
+
+    // cy.intercept('GET', 'https://jsonplaceholder.typicode.com/posts', {fixture: 'posts.json'}).as('getPosts')
+    // ***INTERCEPT CAN ALSO BE USED TO STUB THE API RESPONSE AND VALIDATE THE UI BASED ON STUBBED RESPONSE DATA***
+    //***WE CAN USE IT FOR INTEGRATION TESTING AS WELL TO ENSURE DATA IN API AND DISPLAYED IN UI ARE SYNC */
+
+})

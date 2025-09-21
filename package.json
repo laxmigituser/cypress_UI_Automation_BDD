@@ -4,21 +4,25 @@
   "description": "framework with BDD support",
   "main": "index.js",
   "scripts": {
-    "testregression": "npx cypress run --env tags=\"@regression\" --headed --browser chrome"
+    "testregression": "npx cypress run --env tags=\"@regression\" --headed --browser chrome & node custom-report-config.js",
+    "regressionrunner": "node regression_runner_with_report.js",
+    "alltestrunner": "node alltest_runner_with_report.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^22.2.0",
     "@cypress/browserify-preprocessor": "3.0.2",
     "cypress": "^14.5.2"
   },
   "devDependencies": {
-    "cypress-mochawesome-reporter": "^4.0.0",
+    "@badeball/cypress-cucumber-preprocessor": "^23.2.0",
+    "cypress-mochawesome-reporter": "^4.0.2",
     "cypress-xpath": "^2.0.1",
     "dayjs": "^1.11.13",
     "mocha": "^11.7.1",
-    "mochawesome": "^7.1.3"
+    "mochawesome": "^7.1.3",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.15.0"
   },
   "cypress-cucumber-preprocessor": {
     "json": {

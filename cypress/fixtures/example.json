@@ -10,8 +10,18 @@
 
   "inventoryPage" : {
     "sortDropdownOptions" : ["Name (A to Z)","Name (Z to A)", "Price (low to high)", "Price (high to low)"],
-    "footer_text" : "© 2025 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy"
+    "footer_text" : "© 2025 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+    "expected_productsList": [
+    "Sauce Labs Backpack",
+    "Sauce Labs Bike Light",
+    "Sauce Labs Bolt T-Shirt",
+    "Sauce Labs Fleece Jacket",
+    "Sauce Labs Onesie",
+    "Test.allTheThings() T-Shirt (Red)"
+  ]
   }
+
+  
   
   
   

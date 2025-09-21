@@ -20,7 +20,7 @@ And Verify following usernames are displayed below the label
 | visual_user |
 And Verify Accepted password label is displayed with text "<pw_text>"
 And Verify following passwords are displayed below the label
-| secret_sauce |
+| secret_sauce02 |
 
 Examples:
 | pageTitle | logoText  | un_text                 | pw_text                 |

@@ -77,8 +77,10 @@ Then("Verify following passwords are displayed below the label", (dataTable) => 
             cy.log(pwd_arr[str])
         }
         const isEqual = pwd_arr.sort().join() === expectedpasswords.sort().join();
+        cy.screenshot('passwords_displayed')
         expect(isEqual).to.equal(true)
     })
+    
 })
 
 When("User enters username as {string}", (username)=>{

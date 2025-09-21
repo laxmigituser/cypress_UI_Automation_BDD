@@ -1,6 +1,8 @@
 const { defineConfig } = require("cypress");
+const mysql = require('mysql2');
 
 const browserify = require("@cypress/browserify-preprocessor");
+
 const {
   addCucumberPreprocessorPlugin,
 } = require("@badeball/cypress-cucumber-preprocessor");
@@ -15,6 +17,21 @@ async function setupNodeEvents(on, config) {
     "file:preprocessor",
     browserify(preprendTransformerToOptions(config, browserify.defaultOptions)),
   );
+
+  //DB config
+  on('task',{
+    queryMysqlDB(query){
+      return new Promise((resolve, reject)=>{
+        const connection = mysql.createConnection(config.env.mysql);
+        connection.query(query, (error, results)=>{
+          if(error) reject(error)
+          else resolve(results)
+        });
+        connection.end();
+      })
+    }
+  })
+
   // require('cypress-mochawesome-reporter/plugin')(on); // for reports
   // Make sure to return the config object as it might have been modified by the plugin.
   return config;

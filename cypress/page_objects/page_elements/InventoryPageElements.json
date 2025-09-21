@@ -9,6 +9,7 @@
         "secondary_header_logo" : "span.title",
         "filter_dropdown" : "select.product_sort_container",
         "inventory_item_card" : "div.inventory_item",
+        "item_card_name" : "div.inventory_item_name",
         "Item_Card_AddToCart" : "//div[@class= 'inventory_item']//button[text()='Add to cart']",
         "footer_twitter_link" : "footer a[data-test='social-twitter']",
         "footer_facebook_link" : "footer a[data-test='social-facebook']",

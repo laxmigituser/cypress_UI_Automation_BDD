@@ -29,6 +29,9 @@ export class InventoryPageActions{
     getInventoryItemsCard(){
         return cy.get(inventoryPageElements.InventoryPageLocators.inventory_item_card)
     }
+    getInventoryItemNames(){
+        return cy.get(inventoryPageElements.InventoryPageLocators.item_card_name)
+    }
     getAddToCartInVentoryItem(){
         return cy.xpath(inventoryPageElements.InventoryPageLocators.Item_Card_AddToCart)
     }
